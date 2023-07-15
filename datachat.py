@@ -9,7 +9,8 @@ import pandas as pd
 OPENAI_API_KEY= st.secrets["auth_token"]
 
 def main():
-    load_dotenv()
+    #load_dotenv()
+    st.set_page_config(page_title="AskCSV",page_icon=":robot:",layout="wide")
 
     # Load the OpenAI API key from the environment variable
     if os.getenv("OPENAI_API_KEY") is None or os.getenv("OPENAI_API_KEY") == "":
