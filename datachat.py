@@ -19,8 +19,6 @@ def main():
     else:
         print("OPENAI_API_KEY is set")"""
 
-    st.set_page_config(page_title="AskCSV",page_icon=":robot:",layout="wide")
-
     #CSS
     hide_st_style = """
             <style>
