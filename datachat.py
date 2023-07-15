@@ -10,7 +10,7 @@ headers = {
     "authorization": st.secrets["auth_token"],
    "content-type": "application/json"
 }
-OPENAI_API_KEY= st.secrets["auth_token"]
+api_key= st.secrets["auth_token"]
 
 def main():
     #load_dotenv()
@@ -68,7 +68,7 @@ def main():
             input_text = st.text_input("Enter your Query")
             if input_text is not None:
                 if st.button("chat with csv"):
-                    agent = create_csv_agent(OpenAI(temperature=0,openai_api_key="OPENAI_API_KEY"), csv_file_path, verbose=True)
+                    agent = create_csv_agent(OpenAI(temperature=0,openai_api_key=api_key), csv_file_path, verbose=True)
                     with st.spinner(text="In progress..."):
                         st.info("Your query: "+input_text)
                         st.write(agent.run(input_text))
