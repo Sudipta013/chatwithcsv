@@ -13,11 +13,11 @@ def main():
     st.set_page_config(page_title="AskCSV",page_icon=":robot:",layout="wide")
 
     # Load the OpenAI API key from the environment variable
-    if os.getenv("OPENAI_API_KEY") is None or os.getenv("OPENAI_API_KEY") == "":
+    """if os.getenv("OPENAI_API_KEY") is None or os.getenv("OPENAI_API_KEY") == "":
         print("OPENAI_API_KEY is not set")
         exit(1)
     else:
-        print("OPENAI_API_KEY is set")
+        print("OPENAI_API_KEY is set")"""
 
     st.set_page_config(page_title="AskCSV",page_icon=":robot:",layout="wide")
 
