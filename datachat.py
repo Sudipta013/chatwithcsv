@@ -6,6 +6,10 @@ import streamlit as st
 import tempfile
 import pandas as pd
 
+headers = {
+    "authorization": st.secrets["auth_token"],
+   "content-type": "application/json"
+}
 OPENAI_API_KEY= st.secrets["auth_token"]
 
 def main():
