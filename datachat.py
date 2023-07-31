@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 import os
 import tempfile
 import numpy as np
-from pandas_profiling import ProfileReport
+from ydata_profiling import ProfileReport
 from streamlit_pandas_profiling import st_profile_report
 
 def main():
