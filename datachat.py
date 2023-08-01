@@ -135,11 +135,11 @@ if upload is not None: ## File as Bytes
         corr_fig = create_correlation_chart(corr_df)
         
         st.subheader("3. Correlation Chart")
-        st.pyplot(corr_fig, use_container_width=True)
+        st.pyplot(corr_fig)
 
         st.subheader("4. Missing Values Distribution")
         missing_fig = create_missing_values_bar(df)
-        st.pyplot(missing_fig, use_container_width=True)
+        st.pyplot(missing_fig)
 
     with tab2: ## Individual Column Stats
         df_descr = df.describe()
