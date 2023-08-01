@@ -8,4 +8,4 @@ bokeh
 pandas-bokeh
 bokeh<=2.4.3
 missingno
-matplotlib
+matplotlib==3.7.1
