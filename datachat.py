@@ -112,7 +112,7 @@ if upload is not None: ## File as Bytes
             input_text = st.text_input("Enter your Query")
             if input_text is not None:
                 if st.button("chat"):
-                    agent = create_csv_agent(OpenAI(temperature=0,openai_api_key),csv_file_path)
+                    agent = create_csv_agent(OpenAI(temperature=0,openai_api_key = open_ai_key),csv_file_path)
                     with st.spinner(text="In progress..."):
                         st.info("Your query: " + input_text)
                         st.write(agent.run(input_text))
