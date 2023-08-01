@@ -46,7 +46,7 @@ def find_cat_cont_columns(df): ## Logic to Separate Continuous & Categorical Col
     return cont_columns, cat_columns
 
 ### Web App / Dashboard Code
-st.set_page_config(page_icon=":bar_chart:", page_title="EDA Automated using Python")
+st.set_page_config(page_icon=":bar_chart:", page_title="EDA Automated using Python",layout="wide")
 open_ai_key = st.secrets["auth_token"]
 # CSS
 hide_st_style = """
