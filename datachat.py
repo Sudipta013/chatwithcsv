@@ -6,8 +6,8 @@ from dotenv import load_dotenv
 import os
 import tempfile
 import numpy as np
-from ydata_profiling import ProfileReport
-from streamlit_pandas_profiling import st_profile_report
+#from ydata_profiling import ProfileReport
+#from streamlit_pandas_profiling import st_profile_report
 
 def main():
     load_dotenv()
@@ -77,10 +77,10 @@ def main():
         st.subheader("CSV Data")
         st.dataframe(data)
         #pandas profiling report
-        if st.button("Show Exploratory Data Analysis Report"):
-            pr = ProfileReport(data,explorative=True,minimal=True)
-            st.header("Pandas Profiling Report")
-            st_profile_report(pr)
+        #if st.button("Show Exploratory Data Analysis Report"):
+            #pr = ProfileReport(data,explorative=True,minimal=True)
+            #st.header("Pandas Profiling Report")
+            #st_profile_report(pr)
         #chatcsv
         st.info("Chat with your CSV")
         input_text = st.text_input("Enter your Query")
