@@ -10,8 +10,6 @@ import missingno
 from dotenv import load_dotenv
 import os
 import tempfile
-#from ydata_profiling import ProfileReport
-#from streamlit_pandas_profiling import st_profile_report
 from langchain.agents import create_csv_agent
 from langchain.llms import OpenAI
 #from sqlalchemy.ext.declarative import declarative_base
@@ -46,7 +44,7 @@ def find_cat_cont_columns(df): ## Logic to Separate Continuous & Categorical Col
     return cont_columns, cat_columns
 
 ### Web App / Dashboard Code
-st.set_page_config(page_icon=":bar_chart:", page_title="EDA Automated using Python",layout="wide")
+st.set_page_config(page_icon=":bar_chart:", page_title="EDA Automated using Python")
 open_ai_key = st.secrets["auth_token"]
 # CSS
 hide_st_style = """
