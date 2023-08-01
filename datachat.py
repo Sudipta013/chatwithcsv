@@ -64,7 +64,7 @@ bg = """
         </style>
         """
 st.markdown(bg, unsafe_allow_html=True)
-# Add the customized bottom bar
+# Add the customized yellow bottom bar on the left side
 bottom_bar_html = """
     <style>
     .bottom-bar {
@@ -73,14 +73,17 @@ bottom_bar_html = """
         position: fixed;
         left: 0;
         bottom: 0;
-        width: 100%;
-        text-align: right;
-        font-family: 'Russo One', sans-serif;
-        font-size: 14px;
+        height: 100%;
+        width: 200px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
     </style>
     <div class="bottom-bar">
-        <span style="color: white; font-weight: bold;">Techie Indians</span>
+        <span style="color: white; font-family: 'Russo One', sans-serif; font-size: 14px;">Techie Indian</span>
     </div>
     """
 st.markdown(bottom_bar_html, unsafe_allow_html=True)
