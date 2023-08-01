@@ -85,7 +85,7 @@ bottom_bar_html = """
     }
     </style>
     <div class="bottom-bar">
-        <span style="color: white; font-family: 'Russo One'; font-size: 14px;">The Techie Indian</span>
+        <span style="color: white; font-family: 'Russo One'; font-size: 18px;">The Techie Indian</span>
     </div>
     """
 st.markdown(bottom_bar_html, unsafe_allow_html=True)
