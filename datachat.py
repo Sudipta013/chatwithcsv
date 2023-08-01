@@ -74,7 +74,7 @@ bottom_bar_html = """
         left: 0;
         bottom: 0;
         height: 100%;
-        width: 200px;
+        width: 50px;
         writing-mode: vertical-rl; /* Vertical writing mode */
         text-orientation: upright; /* Text orientation */
         text-align: center;
