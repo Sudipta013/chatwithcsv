@@ -20,7 +20,7 @@ def main():
         print("OPENAI_API_KEY is set")
 
     st.set_page_config(page_title="AskyourCSV", page_icon=":robot:", layout="wide")
-
+    open_ai_key = st.secrets["auth_token"]
     # CSS
     hide_st_style = """
             <style>
@@ -86,7 +86,7 @@ def main():
         input_text = st.text_input("Enter your Query")
         if input_text is not None:
             if st.button("Chat with CSV"):
-                agent = create_csv_agent(OpenAI(temperature=0), csv_file_path, verbose=True)
+                agent = create_csv_agent(OpenAI(temperature=0,openai_api_key=open_ai_key), csv_file_path, verbose=True)
                 with st.spinner(text="In progress..."):
                     st.info("Your query: " + input_text)
                     st.write(agent.run(input_text))
