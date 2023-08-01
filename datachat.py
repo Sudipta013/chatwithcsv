@@ -10,8 +10,8 @@ import missingno
 from dotenv import load_dotenv
 import os
 import tempfile
-from ydata_profiling import ProfileReport
-from streamlit_pandas_profiling import st_profile_report
+#from ydata_profiling import ProfileReport
+#from streamlit_pandas_profiling import st_profile_report
 from langchain.agents import create_csv_agent
 from langchain.llms import OpenAI
 #from sqlalchemy.ext.declarative import declarative_base
