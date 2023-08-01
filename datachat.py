@@ -74,7 +74,7 @@ bottom_bar_html = """
         left: 0;
         bottom: 0;
         height: 100%;
-        width: 50px;
+        width: 70px;
         writing-mode: vertical-rl; /* Vertical writing mode */
         text-orientation: upright; /* Text orientation */
         text-align: center;
@@ -85,7 +85,7 @@ bottom_bar_html = """
     }
     </style>
     <div class="bottom-bar">
-        <span style="color: white; font-family: 'Russo One'; font-size: 18px;">THE TECHIE INDIANS</span>
+        <span style="color: Black; font-family: 'Russo One'; font-size: 18px;">THE TECHIE INDIANS</span>
     </div>
     """
 st.markdown(bottom_bar_html, unsafe_allow_html=True)
